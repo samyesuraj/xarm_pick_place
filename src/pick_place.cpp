@@ -10,7 +10,7 @@ void moveToPose(
     MoveGroupInterface& arm,
     const geometry_msgs::msg::Pose& pose)
 {
-    arm.setPoseTarget(pose);
+    arm.setApproximateJointValueTarget(pose);
     arm.move();
 }
 
